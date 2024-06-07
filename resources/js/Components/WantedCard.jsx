@@ -29,7 +29,7 @@ const WantedCard = ({ wanted }) => {
                         <span className="underline">{wanted.Localisation}</span>{" "}
                         pour :
                     </h3>
-                    <ul className="list-disc list-inside ml-4 text-gray-500">
+                    <ul className="list-disc list-inside ml-4 text-black">
                         {wanted.accusations.map((accusation, index) => (
                             <li className="font-extralight" key={index}>
                                 {accusation.label}
@@ -38,7 +38,7 @@ const WantedCard = ({ wanted }) => {
                     </ul>
                 </div>
                 <div className="mt-2">
-                    <h3 className="font-extralight text-gray-500">
+                    <h3 className="font-extralight text-black">
                         <span className="text-lg font-semibold text-amber-950">
                             Description :{" "}
                         </span>
@@ -46,7 +46,7 @@ const WantedCard = ({ wanted }) => {
                     </h3>
                 </div>
                 <div className="mt-2 font-extralight">
-                    <h3 className="text-gray-500">
+                    <h3 className="text-black">
                         <span className="text-lg font-semibold text-amber-950">
                             Note :{" "}
                         </span>
@@ -54,7 +54,7 @@ const WantedCard = ({ wanted }) => {
                     </h3>
                 </div>
                 <div className="mt-2">
-                    <h3 className="text-gray-500 underline font-extralight">
+                    <h3 className="text-black underline font-extralight">
                         <span className="text-lg font-semibold text-amber-950">
                             En date du :{" "}
                         </span>
