@@ -19,7 +19,7 @@ const WantedCard = ({ wanted }) => {
                     Prime : ${wanted.Prime}
                 </div>
                 <div className="mt-2 text-center">
-                    <span className="font-extrabold text-red-700 uppercase text-xl">
+                    <span className="font-extrabold text-red-700 uppercase text-xl font-robot">
                         {wanted.Etat}
                     </span>
                 </div>
