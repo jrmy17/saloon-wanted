@@ -65,7 +65,7 @@ const WantedCard = ({ wanted }) => {
                     </h3>
                 </div>
                 <div className="mt-2 mb-2 flex items-center">
-                    <span className="font-bold text-amber-950">
+                    <span className="font-bold text-amber-950 text-lg">
                         Activité :{"  "}
                     </span>
                     {wanted.statut === "Hors ligne" ? (
