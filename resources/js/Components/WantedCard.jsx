@@ -4,23 +4,22 @@ import { FaCircle } from "react-icons/fa";
 
 const WantedCard = ({ wanted }) => {
     return (
-        <div className="wanted-card w-96 mx-auto shadow-lg border border-amber-950 rounded-lg overflow-hidden mb-6">
+        <div className="wanted-card w-96 mx-auto shadow-lg rounded-lg overflow-hidden mb-6">
             <div className="text-amber-950 text-center py-2 font-bold text-4xl font-rdr">
                 {wanted.Nom}
             </div>
-            <div className="p-4 font-semibold">
+            <div className="font-semibold">
                 <div className="flex justify-center mb-4">
                     <img
-                        className="h-48 w-48 object-cover rounded-full border-4 border-amber-950"
+                        className="h-48 w-48 object-cover rounded-full border-4 border-amber-950  bg-amber-950"
                         src={wanted.image}
-                        alt={wanted.Nom}
                     />
                 </div>
-                <div className="text-center text-xl font-bold text-amber-950 font-rdr">
+                <div className="text-center text-xl text-white font-rdr planche2">
                     Prime : ${wanted.Prime}
                 </div>
                 <div className="mt-2 text-center">
-                    <span className="font-bold">{wanted.Etat}</span>
+                    <span className="font-semibold">{wanted.Etat}</span>
                 </div>
                 <div className="mt-2 font-semibold">
                     <h3 className="text-lg font-semibold text-amber-950">

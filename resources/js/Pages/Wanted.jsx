@@ -33,13 +33,13 @@ export default function Wanted({ auth, wanted }) {
                     <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
                         <nav className="flex items-center gap-6 lg:gap-8 top-0 inset-x-0 z-10 justify-around p-2">
                             <ApplicationLogo className="block h-16 w-auto fill-current text-black dark:text-white" />
-                            <h1 className="font-rdr text-6xl text-amber-950">
+                            <h1 className="font-rdr text-4xl text-white planche">
                                 Wanted
                             </h1>
                             {auth.user ? (
                                 <Link
                                     href={route("dashboard")}
-                                    className="text-xl font-bold rounded-md px-3 py-2 text-amber-950 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    className="text-xl font-bold rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                 >
                                     Dashboard
                                 </Link>
@@ -47,7 +47,7 @@ export default function Wanted({ auth, wanted }) {
                                 <>
                                     <Link
                                         href={route("login")}
-                                        className="text-xl rounded-md px-3 py-2 text-amber-950 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        className="text-xl font-bold rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                     >
                                         Connexion
                                     </Link>
@@ -67,15 +67,15 @@ export default function Wanted({ auth, wanted }) {
                                     placeholder="Rechercher un joueur"
                                     value={searchValue}
                                     onChange={handleSearchChange}
-                                    className="noborder w-full px-4 py-2 text-white bg-amber-950 bg-opacity-55 dark:bg-black/70 border border-black dark:border-white/70 rounded-lg focus:outline-none placeholder-white"
+                                    className="noborder w-full px-4 py-2 text-white bg-black bg-opacity-45 dark:bg-black/70 border border-black dark:border-white/70 rounded-lg focus:outline-none placeholder-white placeholder-opacity-55"
                                 />
                             </div>
                         </div>
-                        <main className="mt-16 min-h-[60svh]">
+                        <main className="mt-16 min-h-[50svh]">
                             <div className="flex flex-wrap justify-center gap-6 mt-8">
                                 {filteredData.length === 0 && (
                                     <div className="text-center w-full">
-                                        <h2 className="text-xl font-bold text-black dark:text-white">
+                                        <h2 className="text-xl font-bold text-white dark:text-white">
                                             Pas de Wanted trouvé
                                         </h2>
                                     </div>
@@ -86,11 +86,10 @@ export default function Wanted({ auth, wanted }) {
                             </div>
                         </main>
                         <div className="mt-16 text-center bottom-0">
-                            <div className="flex items-center justify-center">
-                                <ApplicationLogo className="block h-11 w-auto fill-current text-black dark:text-white" />
-                                <h1 className="font-rdr text-2xl">Wanted</h1>
+                            <div className="flex items-center justify-center gap-4">
+                                <ApplicationLogo className="block h-11 w-auto fill-current text-white dark:text-white" />
                             </div>
-                            <footer className="py-2 text-center text-sm text-black dark:text-white/70">
+                            <footer className="py-2 text-center text-sm text-white dark:text-white/70">
                                 Saloon RôlePlay - Tous droits réservés
                             </footer>
                         </div>

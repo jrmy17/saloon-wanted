@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .wanted-card {
-    background-image: url("/resources/img/parchment2.webp");
+    background-image: url("/resources/img/card-bg.png");
     background-color: rgba(255, 255, 255, 0);
     background-size: cover;
     background-position: center;
@@ -13,7 +13,7 @@
 }
 
 .background-wall {
-    background-image: url("/resources/img/wooden_wall.webp");
+    background-image: url("/resources/img/bg.jpg");
     background-size: contain;
     background-repeat: repeat;
     background-position: center;
@@ -27,4 +27,22 @@
     border-color: black !important;
     --tw-ring-shadow: none;
     color: white;
+}
+
+.planche {
+    background-image: url("/resources/img/planche.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem;
+    rotate: -5.5deg;
+}
+
+.planche2 {
+    background-image: url("/resources/img/planche.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    rotate: -5.5deg;
 }
