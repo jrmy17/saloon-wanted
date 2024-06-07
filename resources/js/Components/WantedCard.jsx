@@ -19,31 +19,33 @@ const WantedCard = ({ wanted }) => {
                     Prime : ${wanted.Prime}
                 </div>
                 <div className="mt-2 text-center">
-                    <span className="font-semibold text-gray-500">
+                    <span className="font-extrabold text-red-700 uppercase text-xl">
                         {wanted.Etat}
                     </span>
                 </div>
-                <div className="mt-2 font-semibold">
+                <div className="mt-2">
                     <h3 className="text-lg font-semibold text-amber-950">
-                        Recherché par les autorité de{" "}
+                        Recherché par les autorités de{" "}
                         <span className="underline">{wanted.Localisation}</span>{" "}
                         pour :
                     </h3>
                     <ul className="list-disc list-inside ml-4 text-gray-500">
                         {wanted.accusations.map((accusation, index) => (
-                            <li key={index}>{accusation.label}</li>
+                            <li className="font-extralight" key={index}>
+                                {accusation.label}
+                            </li>
                         ))}
                     </ul>
                 </div>
                 <div className="mt-2">
-                    <h3 className="font-semibold text-gray-500">
+                    <h3 className="font-extralight text-gray-500">
                         <span className="text-lg font-semibold text-amber-950">
                             Description :{" "}
                         </span>
                         {wanted.Description}
                     </h3>
                 </div>
-                <div className="mt-2">
+                <div className="mt-2 font-extralight">
                     <h3 className="text-gray-500">
                         <span className="text-lg font-semibold text-amber-950">
                             Note :{" "}
@@ -52,7 +54,7 @@ const WantedCard = ({ wanted }) => {
                     </h3>
                 </div>
                 <div className="mt-2">
-                    <h3 className="text-gray-500">
+                    <h3 className="text-gray-500 underline font-extralight">
                         <span className="text-lg font-semibold text-amber-950">
                             En date du :{" "}
                         </span>
@@ -62,16 +64,25 @@ const WantedCard = ({ wanted }) => {
                         )}
                     </h3>
                 </div>
-                <div className="mt-2 mb-2 text-center">
+                <div className="mt-2 mb-2 flex items-center">
                     <span className="font-bold text-amber-950">
-                        Activité :{" "}
+                        Activité :{"  "}
                     </span>
                     {wanted.statut === "Hors ligne" ? (
-                        <FaCircle className="inline text-red-500" />
+                        <div className="relative flex pl-2">
+                            <FaCircle className="inline text-red-500 animate-ping absolute" />
+                            <FaCircle className="inline text-red-500" />
+                        </div>
                     ) : wanted.statut === "En ligne" ? (
-                        <FaCircle className="inline text-green-500" />
+                        <div className="relative flex pl-2">
+                            <FaCircle className="inline text-green-500 animate-ping absolute" />
+                            <FaCircle className="inline text-green-500" />
+                        </div>
                     ) : (
-                        <FaCircle className="inline text-gray-500" />
+                        <div className="relative flex pl-2">
+                            <FaCircle className="inline text-gray-500 animate-ping absolute" />
+                            <FaCircle className="inline text-gray-500" />
+                        </div>
                     )}
                 </div>
             </div>

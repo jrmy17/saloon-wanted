@@ -46,3 +46,7 @@
     padding: 1rem;
     rotate: -5.5deg;
 }
+
+.animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
