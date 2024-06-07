@@ -4,7 +4,7 @@ import { FaCircle } from "react-icons/fa";
 
 const WantedCard = ({ wanted }) => {
     return (
-        <div className="wanted-card w-96 mx-auto shadow-lg rounded-lg overflow-hidden mb-6">
+        <div className="wanted-card w-[27rem] mx-auto shadow-lg rounded-lg overflow-hidden mb-6">
             <div className="text-amber-950 text-center py-2 font-bold text-4xl font-rdr">
                 {wanted.Nom}
             </div>
@@ -19,7 +19,9 @@ const WantedCard = ({ wanted }) => {
                     Prime : ${wanted.Prime}
                 </div>
                 <div className="mt-2 text-center">
-                    <span className="font-semibold">{wanted.Etat}</span>
+                    <span className="font-semibold text-gray-500">
+                        {wanted.Etat}
+                    </span>
                 </div>
                 <div className="mt-2 font-semibold">
                     <h3 className="text-lg font-semibold text-amber-950">
@@ -27,14 +29,14 @@ const WantedCard = ({ wanted }) => {
                         <span className="underline">{wanted.Localisation}</span>{" "}
                         pour :
                     </h3>
-                    <ul className="list-disc list-inside ml-4">
+                    <ul className="list-disc list-inside ml-4 text-gray-500">
                         {wanted.accusations.map((accusation, index) => (
                             <li key={index}>{accusation.label}</li>
                         ))}
                     </ul>
                 </div>
                 <div className="mt-2">
-                    <h3 className="font-semibold">
+                    <h3 className="font-semibold text-gray-500">
                         <span className="text-lg font-semibold text-amber-950">
                             Description :{" "}
                         </span>
@@ -42,7 +44,7 @@ const WantedCard = ({ wanted }) => {
                     </h3>
                 </div>
                 <div className="mt-2">
-                    <h3 className="">
+                    <h3 className="text-gray-500">
                         <span className="text-lg font-semibold text-amber-950">
                             Note :{" "}
                         </span>
@@ -50,7 +52,7 @@ const WantedCard = ({ wanted }) => {
                     </h3>
                 </div>
                 <div className="mt-2">
-                    <h3>
+                    <h3 className="text-gray-500">
                         <span className="text-lg font-semibold text-amber-950">
                             En date du :{" "}
                         </span>

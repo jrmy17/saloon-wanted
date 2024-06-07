@@ -30,37 +30,15 @@ export default function Wanted({ auth, wanted }) {
             <Head title="Wanted" />
             <div className="background-wall text-black/50 dark:bg-black dark:text-white/50">
                 <div className="relative min-h-screen flex flex-col items-center">
-                    <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                        <nav className="flex items-center gap-6 lg:gap-8 top-0 inset-x-0 z-10 justify-around p-2">
+                    <div className="relative w-full px-6">
+                        <nav className="flex items-center gap-6 lg:gap-8 top-0 inset-x-0 z-10 justify-between p-2">
                             <ApplicationLogo className="block h-16 w-auto fill-current text-black dark:text-white" />
                             <h1 className="font-rdr text-4xl text-white planche">
                                 Wanted
                             </h1>
-                            {auth.user ? (
-                                <Link
-                                    href={route("dashboard")}
-                                    className="text-xl font-bold rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                >
-                                    Dashboard
-                                </Link>
-                            ) : (
-                                <>
-                                    <Link
-                                        href={route("login")}
-                                        className="text-xl font-bold rounded-md px-3 py-2 text-white ring-1 ring-transparent transition focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Connexion
-                                    </Link>
-                                    {/* <Link
-                                            href={route("register")}
-                                            className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Register
-                                        </Link> */}
-                                </>
-                            )}
+                            <div className="w-16"></div>
                         </nav>
-                        <div className="flex flex-col items-center mt-12">
+                        <div className="flex flex-col items-center mt-2">
                             <div className="relative w-full max-w-lg">
                                 <input
                                     type="text"
