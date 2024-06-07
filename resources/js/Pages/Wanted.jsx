@@ -28,16 +28,18 @@ export default function Wanted({ auth, wanted }) {
     return (
         <>
             <Head title="Wanted" />
-            <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
-                <div className="relative min-h-screen flex flex-col items-center selection:bg-[#FF2D20] selection:text-white">
+            <div className="background-wall text-black/50 dark:bg-black dark:text-white/50">
+                <div className="relative min-h-screen flex flex-col items-center">
                     <div className="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                        <nav className="flex items-center gap-6 lg:gap-8 fixed top-0 inset-x-0 z-10 bg-white dark:bg-zinc-900 backdrop-blur-lg backdrop-filter justify-around p-2">
-                            <ApplicationLogo className="block h-11 w-auto fill-current text-black dark:text-white" />
-                            <h1 className="font-rdr text-2xl">Wanted</h1>
+                        <nav className="flex items-center gap-6 lg:gap-8 top-0 inset-x-0 z-10 justify-around p-2">
+                            <ApplicationLogo className="block h-16 w-auto fill-current text-black dark:text-white" />
+                            <h1 className="font-rdr text-6xl text-amber-950">
+                                Wanted
+                            </h1>
                             {auth.user ? (
                                 <Link
                                     href={route("dashboard")}
-                                    className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    className="text-xl font-bold rounded-md px-3 py-2 text-amber-950 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                 >
                                     Dashboard
                                 </Link>
@@ -45,7 +47,7 @@ export default function Wanted({ auth, wanted }) {
                                 <>
                                     <Link
                                         href={route("login")}
-                                        className="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        className="text-xl rounded-md px-3 py-2 text-amber-950 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                     >
                                         Connexion
                                     </Link>
@@ -58,14 +60,14 @@ export default function Wanted({ auth, wanted }) {
                                 </>
                             )}
                         </nav>
-                        <div className="flex flex-col items-center mt-20">
+                        <div className="flex flex-col items-center mt-12">
                             <div className="relative w-full max-w-lg">
                                 <input
                                     type="text"
                                     placeholder="Rechercher un joueur"
                                     value={searchValue}
                                     onChange={handleSearchChange}
-                                    className="w-full px-4 py-2 text-black dark:text-white/70 bg-white dark:bg-zinc-900 border border-black dark:border-white/70 rounded-md dark:focus-visible:ring-white"
+                                    className="noborder w-full px-4 py-2 text-white bg-amber-950 bg-opacity-55 dark:bg-black/70 border border-black dark:border-white/70 rounded-lg focus:outline-none placeholder-white"
                                 />
                             </div>
                         </div>
