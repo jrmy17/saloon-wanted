@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "RDR Lino Regular";
-    src: url(/resources/font/RDR\ Lino\ Regular.woff2) format("woff2");
+    src: url(/font/RDR\ Lino\ Regular.woff2) format("woff2");
   }
 
 .wanted-card {
