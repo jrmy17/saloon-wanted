@@ -14,7 +14,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                rdr: ["RDR Lino Regular", ...defaultTheme.fontFamily.sans],
+                rdr: ["RDR Lino Regular"],
                 robot: ["Roboto", ...defaultTheme.fontFamily.sans],
             },
         },
