@@ -10,8 +10,6 @@
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.bunny.net">
 		<link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-		<link href="https://db.onlinewebfonts.com/c/ab21a97b9cae2e116d8d1473baefc9f0?family=RDR+Lino+Regular"
-				rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
