@@ -64,7 +64,7 @@ const WantedCard = ({ wanted }) => {
                         )}
                     </h3>
                 </div>
-                <div className="mt-2 mb-2 flex items-center">
+                {/* <div className="mt-2 mb-2 flex items-center">
                     <span className="font-bold text-amber-950 text-lg">
                         Activité :{"  "}
                     </span>
@@ -84,7 +84,7 @@ const WantedCard = ({ wanted }) => {
                             <FaCircle className="inline text-gray-500" />
                         </div>
                     )}
-                </div>
+                </div> */}
             </div>
         </div>
     );
